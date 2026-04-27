@@ -1,3 +1,4 @@
+import './main.css'  // or whatever your Tailwind entry is
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 

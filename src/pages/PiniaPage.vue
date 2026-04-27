@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CounterDemo from './CounterDemo.vue';
+import CounterDemo from '@/components/CounterDemo.vue'
 </script>
 <template>
     <div class="p-8">

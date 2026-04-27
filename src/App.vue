@@ -1,13 +1,12 @@
 <script setup lang="ts">
-// import CompositionDemo from './components/CompositionDemo.vue';
-import PiniaDemo from './components/PiniaDemo.vue';
-
+import { routes } from '@/router'
 </script>
 
-
 <template>
-  <!-- <CompositionDemo /> -->
-  <PiniaDemo />
+  <div class="flex flex-row gap-2 p-4">
+    <router-link v-for="route in routes" :to="route.path" :key="route.path" class="hover:bg-gray-500 px-3 py-2 rounded">
+      {{ route.name }}
+    </router-link>
+  </div>
+  <router-view />
 </template>
-
-<style scoped></style>

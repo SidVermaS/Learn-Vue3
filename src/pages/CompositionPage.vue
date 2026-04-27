@@ -15,10 +15,10 @@ const profile = ref({
 function ageIncrement() {
   profile.value.age++
 }
-const inputNameRef = ref(null)
+const inputNameRef = ref<HTMLInputElement | null>(null)
 
 onMounted(() => {
-  inputNameRef.value.focus()
+  inputNameRef.value?.focus()
 })
 watch(count, (newValue, oldValue) => {
   console.log(oldValue, '→', newValue)
